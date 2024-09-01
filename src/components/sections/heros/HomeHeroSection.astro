@@ -8,30 +8,27 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Welcome to Odyssey</h1>
-				<p>
-					A marketing website theme built with <a
-						href="https://astro.build"
-						target="_blank"
-						rel="noreferrer">Astro</a
-					> and carefully crafted for startups and businesses.
+				<h1>Barrington Environmental Establishment</h1>
+				<h3>BEE Eco-Friendly!</h3>
+				<p >
+					A student-led, Barrington, Rhode Island-based organization aiming to spread environmental awareness in the East Bay.
 				</p>
 				<div class="hero-btns__container">
 					<Button href="/theme/get-started" customIcon
-						>Get Started
+						>Join Us
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
             </Button
 					>
-					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
+					<Button href="./#second" unelevated><u>Learn More</u></Button>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>}
 		</div>
 		<div class="hero-section__image">
 				<picture>
 					<img
-						src="/assets/images/home/classic-hero.jpg"
+						src="/assets/images/home/bee3.webp"
 						alt="Astro Odyssey"
 						id="home-hero-image"
 					/>
@@ -65,7 +62,7 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		display: flex;
 	}
 	.hero-section__image img {
-		width: 100%;
+		width: 85%;
 		height: 100%;
 		max-height: 80vh;
 		object-fit: cover;

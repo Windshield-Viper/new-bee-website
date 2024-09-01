@@ -16,7 +16,7 @@ const { navData, rightMenu } = Astro.props;
   function toggleMenu() {
     menuButtonIconHam.toggleAttribute('hidden');
     menuButtonIconClose.toggleAttribute('hidden');
-    
+
     if (navHeader.hasAttribute('mobile-menu-open', true)) {
       menuButton.title = "Open Main Menu"
       // unlock scroll position
@@ -34,10 +34,10 @@ const { navData, rightMenu } = Astro.props;
       bodyElement.style.top = `-${scrollPosition}px`;
       bodyElement.style.width = '100%';
     }
-    
+
     navHeader.toggleAttribute('mobile-menu-open');
   }
-</script>  
+</script>
 
 <header id="odysseyNavHeader" class={`${rightMenu ? "header--right" : ``.trim()}`}>
   <div class="header-logo-menu__container">
@@ -130,7 +130,7 @@ const { navData, rightMenu } = Astro.props;
   }
   @media(max-width: 600px) {
     #menuButton {
-      display: block;  
+      display: block;
       z-index: 100;
     }
     .header-nav__container {

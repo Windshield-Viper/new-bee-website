@@ -1,0 +1,80 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+import { Container, OneColumnTextSection} from '@components/odyssey-theme';
+
+
+const seo = {
+	title: 'Events | BEE',
+	description: 'Events Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>BEE Projects</h1>
+			<p>
+                Here are the projects the Barrington Environmental Establishment has worked on in the past and is currently working on. Please check back for updates and get in touch if you have project ideas!
+			</p>
+		</div>
+    <picture slot="image-container">
+      <figure>
+      <img
+        src="/assets/images/home/bee3.webp"
+        alt="Astro Odyssee"
+        id="home-hero-image"
+        style=" width:500px !important"
+      />
+      <figcaption style="text-align: center; font-size: 17px;">Caption</figcaption>
+    </figure>
+
+
+
+    </picture>
+	</HeroSection>
+
+    <Container>
+    <h2>Projects</h2>
+    <OneColumnTextSection>
+				
+                <div slot="column-1-body">
+                    <h3>Composting in Barrington</h3>
+                    <h4><i>June 2023-Ongoing</i></h4>
+                    <p>
+                        We have started a public compost drop-off where residents of Barrington can drop off their food scraps, which are then taken to a local farm to be composted. This diverts food waste from the landfill where it releases carbon dioxide. BEE member Sabine Cladis and BEE founder Emma Pautz gained approval from the Town Hall to construct a new compost drop-off location in June of 2023. After building and designing the station over the summer, the Barrington Environmental Establishment declared it ready for use in December. In 35 weeks of operation, we have collected 3511 pounds of compost and expect this number to increase.                 
+                        <br> <br> Press:
+                        <a href="https://www.eastbayri.com/barrington/stories/barrington-students-spearhead-new-compost-drop-off,116034">Barrington students spearhead new compost drop-off</a>, <a href="https://www.eastbayri.com/stories/new-compost-drop-off-site-opening-soon-in-barrington,118302">New compost drop-off site opening soon in Barrington</a>
+                    </p>
+                    
+                    
+                    <br>
+                 
+              
+                </div>
+
+                
+
+
+                <div slot="column-1-body">
+                    <h3>Sapling Sale</h3>
+                    <h4><i>Ongoing</i></h4>
+                    <p>
+                        In 2022, 2023, and 2024, we organized sapling sales that resulted in 1,033 saplings being planted across Barrington. By planting these saplings, we've collectively offset around 1,235 tons of carbon emissions. From September to May each year, we have gone door-to-door, posted on Facebook, and reached out to members of the community. It’s been a hands-on way to contribute to a healthier planet, one tree at a time. Most of all though, we have been able to physically see our impact: walking throughout Barrington, it has been gratifying to see our saplings flourishing.                         <br> <br> Press:
+                        <a href="https://www.eastbayri.com/barrington/stories/bhs-students-selling-saplings-to-off-set-school-paper-use,111402?">BHS students selling saplings to off-set school paper use</a>, <a href="https://www.eastbayri.com/barrington/stories/bhs-students-hold-sapling-sale-to-offset-schools-paper-use,121111">BHS students hold sapling sale to offset schools’ paper use</a>
+                    </p>
+                    
+                    
+                    
+              
+                </div>
+
+				
+
+			
+				
+
+			</OneColumnTextSection>
+        </Container>
+</Layout>

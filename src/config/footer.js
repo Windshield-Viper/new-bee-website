@@ -1,53 +1,33 @@
 export const footerSocials = [
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
-  },
-  {
-    name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
-    icon: "mdi:youtube",
-  },
-  {
-    name: 'Github',
-    url: 'https://github.com/littlesticks',
-    icon: "mdi:github",
-  },
-  {
-    name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
-    icon: "ic:baseline-discord",
-  },
-]
+	{
+		name: 'Instagram',
+		url: 'https://twitter.com/littlesticksdev',
+		icon: 'mdi:instagram',
+	},
+
+	{
+		name: 'Facebook',
+		url: 'https://github.com/littlesticks',
+		icon: 'mdi:facebook',
+	},
+
+	{
+		name: 'Youtube',
+		url: 'https://youtube.com/c/LittleSticks',
+		icon: 'mdi:youtube',
+	},
+];
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
-		items: [
-			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
-			},
-			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
-			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
-		],
-	},
-	{
-		title: 'Company',
+		title: 'Organization',
 		items: [
 			{
 				title: 'About',
 				slug: '/company/about',
 			},
 			{
-				title: 'Blog',
+				title: 'Newsletter',
 				slug: '/blog',
 			},
 			{
@@ -57,24 +37,25 @@ export const footerLists = [
 		],
 	},
 	{
-		title: 'Theme',
+		title: 'Our Partners',
 		items: [
 			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
+				title: 'Barrington Land Conservation Trust',
+				slug: 'https://www.blct.org/',
 			},
 			{
-				title: 'Style Guide',
+				title: 'Barrington Farm School',
 				slug: '/theme/style-guide',
 			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
+			{
+				title: 'Save the Bay',
+				slug: '/theme/theme-setup',
+			},
+			{
+				title: "Barrington Public Library",
+				slug: '/theme/customizing-odyssey',
+			},
 		],
 	},
+
 ];

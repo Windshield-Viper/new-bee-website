@@ -17,13 +17,25 @@
 		"@astrojs/lit": "^4.0.1",
 		"@astrojs/mdx": "^2.1.1",
 		"@astrojs/sitemap": "^0.1.0",
+		"@iconify-json/ic": "^1.1.17",
+		"@iconify-json/mdi": "^1.1.64",
+		"@types/photoswipe": "^4.1.6",
 		"@webcomponents/template-shadowroot": "^0.2.1",
 		"astro": "^4.4.13",
 		"astro-icon": "^1.1.0",
 		"date-fns": "^2.28.0",
 		"lit": "^3.1.2",
 		"prettier-plugin-astro": "^0.0.12",
-    "@iconify-json/ic": "^1.1.17",
-    "@iconify-json/mdi": "^1.1.64"
+		"tailwindcss": "^3.4.10"
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "^1.1.0",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"embla-carousel-react": "^8.2.0",
+		"lucide-react": "^0.435.0",
+		"photoswipe": "^5.4.4",
+		"tailwind-merge": "^2.5.2",
+		"tailwindcss-animate": "^1.0.7"
 	}
 }

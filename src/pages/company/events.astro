@@ -1,0 +1,65 @@
+---
+import { TextSection } from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+import { Container, TwoColumnTextSection} from '@components/odyssey-theme';
+
+
+const seo = {
+	title: 'Events | BEE',
+	description: 'Events Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>BEE Events</h1>
+			<p>
+                The Barrington Environmental Establishment hosts a variety of monthly events for community outreach. Here are both our upcoming and past events.
+			</p>
+		</div>
+    <picture slot="image-container">
+      <figure>
+      <img
+        src="/assets/images/home/bee3.webp"
+        alt="Astro Odyssee"
+        id="home-hero-image"
+        style=" width:500px !important"
+      />
+      <figcaption style="text-align: center; font-size: 17px;">Caption</figcaption>
+    </figure>
+
+
+
+    </picture>
+	</HeroSection>
+
+    <Container>
+    <h2>Past Events</h2>
+    <TwoColumnTextSection>
+				
+                <div slot="column-1-body">
+                    <h3>Volunteering at Barrington Farm School</h3>
+                    <h4><i>March 26th, 2023</i></h4>
+                    <p>
+                        We did composting, farm clean-up tasks, and planting at the Barrington Farm School, a local farm in Barrington.                   
+                    </p>
+                </div>
+
+                <div slot="column-2-body">
+					<h3>Sea Level Rise - Science and Solutions for Rhode Island </h3>
+                    <h4><i>February 17th, 2023</i></h4>
+					<p>
+						Dr. Kim Cobb, professor and director of the Institutefor Environment and Society at Brown University, spoke on sea level rise in Rhode Island.
+					</p>
+				</div>
+
+				
+
+			
+				
+
+			</TwoColumnTextSection>
+        </Container>
+</Layout>

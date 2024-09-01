@@ -1,92 +1,112 @@
 ---
-import { Container, FeatureCard } from '@components/odyssey-theme';
+import { Container, FeatureCard, QuoteSection, ThreeColumnTextSection, Button, YouTubeEmbedSection } from '@components/odyssey-theme';
+
+
+const imagePaths = [
+  '/assets/images/home/bee3.webp',
+  '/assets/images/home/bee3.webp',
+  '/assets/images/home/bee3.webp',
+  '/assets/images/home/bee3.webp'
+];
+
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 ---
 
+
+
 <Layout>
 	<HomeHeroSection />
-	<Container>
-		<section class="feature-card__section">
-			<h2>Landing Pages</h2>
-			<p>
-				Use one of our landing pages to jumpstart your website or
-				ad campaign.
-			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
-				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
-				</FeatureCard>
-			</div>
-		</section>
-	</Container>
 
 	<Container>
-		<section class="feature-card__section">
-			<h2>Company Pages</h2>
-			<p>
-				Use one of our prebuilt company pages for your about page, contact page,
-				legal pages, blog posts, etc.
-			</p>
-			<div class="feature-card__grid">
-				<FeatureCard href="/company/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
-				</FeatureCard>
-				<FeatureCard href="/company/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
-				</FeatureCard>
-				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
-				</FeatureCard>
-				<FeatureCard
-					href="/blog/posts/remote-work-mental-health"
-					title="Blog Post"
-          imgSrc="/assets/images/home/screenshots/blog-post"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/company/legal"
-					imgSrc="/assets/images/home/screenshots/legal"
-					title="Legal Page"
-				>
-				</FeatureCard>
-			</div>
-		</section>
+		<section class="feature-card__section" id="second">
+			<p>&nbsp;</p>
+			<h2 style="text-align: center;">Our Work</h2>
+			<p style="text-align: center;">
+                Ever since we began, we've been working to make a difference in our community and beyond. Two years
+                later, we're proud of the work we've done.
+            </p>
+
+			<ThreeColumnTextSection>
+				<div slot="column-1-body">
+					<h3>Education</h3>
+					<p>
+						The BEE publishes a biweekly student-written newsletter covering a variety of environmental topics,
+						ranging from recent legal decisions to climate-related tips and tricks. With over <b>40 issues written</b>,
+						we've never missed a publishing date. Find it <a href="/newsletter">here</a>.
+					</p>
+				</div>
+				<Button slot="column-1-cta" href="/newsletter">Join Our Newsletter</Button>
+
+				<div slot="column-2-body">
+					<h3>Involvement</h3>
+					<p>
+						We're always looking for new members to join our team. Whether you're interested in one of our monthly <a href="/events"> events</a>,
+					    our <a href="/tree-plenish">annual tree sale</a> with over <b>800 saplings sold </b> so far, or contributing in a different way,
+                        we'd love to have you. Get in touch with us to learn more!
+					</p>
+				</div>
+
+				<Button slot="column-2-cta" href="/getinvolved">Get Involved </Button>
+				
+
+				<div slot="column-3-body">
+					<h3>Leadership</h3>
+					<p>
+						We're passionate about leading climate action and positive environmental change. We've spoken at the statehouse,
+						led the creation of a compost drop-off processing almost <b>4000 pounds</b>, and been awarded the <b><a href="https://www.epa.gov/education/presidents-environmental-youth-award"
+						>President's Environmental Youth Award</a></b>.
+
+					</p>
+				</div>
+
+				<Button slot="column-3-cta" href="https://www.epa.gov/education/presidents-environmental-youth-award-peya-winners">Learn More</Button>
+				
+
+			</ThreeColumnTextSection>
+
+
+
 	</Container>
 
-	<Container>
-		<section class="feature-card__section">
-			<h2>Theme Pages</h2>
-			<p>Learn more about how to set up and use the Odyssey Theme.</p>
-			<div class="feature-card__grid">
-				<FeatureCard
-					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started"
-					title="Get Started"
-				>
-				</FeatureCard>
-				<FeatureCard
-					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
-					title="Style Guide"
-				>
-				</FeatureCard>
-			</div>
+	<Container >
+	<h2>Media</h2>
+		<section>
+		 <h3>Photos</h3>
+
+			<div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: nowrap; overflow-x: auto; padding: 0.5rem 0rem 2rem;">
+  {imagePaths.map((path) => (
+    <img
+      src={path}
+      alt="Description"
+      style="max-width: 300px; height: auto; object-fit: cover; border-radius: 10px;"
+    />
+  ))}
+    </div>
 		</section>
+		<section>
+	<h3 style="margin-bottom:0px !important;">BEE in the News </h3>
+
+		<ul style="padding-bottom:75px; padding-top:0rem">
+			<li style="padding-top:0rem">
+				Boston Globe - <a href="https://www.bostonglobe.com/2024/07/29/metro/barrington-ri-students-found-club-to-combat-climate-change/">"Watching climate change is scary. Barrington students wanted local opportunities to take action, so they started a club."</a>
+			</li>
+			<li>
+				EastBayRI - <a href="https://www.eastbayri.com/stories/barrington-students-earn-prestigious-environmental-award,123974">"Barrington students earn prestigious environmental award"</a>
+			</li>
+			<li>
+				Barrington Land Conservation Trust - <a href="https://www.blct.org/land-trust-launches-student-stewardship-team/">"Land Trust Launches Student Stewardship Team" </a>
+			</li>
+
+
+		</ul>
+	</section>
+
+
 	</Container>
+
+	
+
+
 </Layout>
-
-<style>
-	.feature-card__section {
-		margin: var(--section-margin) auto;
-	}
-	.feature-card__grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: var(--theme-grid-gap);
-	}
-	@media (max-width: 768px) {
-		.feature-card__grid {
-			grid-template-columns: 1fr;
-		}
-	}
-</style>
