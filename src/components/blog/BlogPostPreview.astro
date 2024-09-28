@@ -4,9 +4,10 @@ const {post} = Astro.props;
 
 <li class="blog-post__preview">
   <a href={post.href}>
-    <img src={post.featuredImage} />
+   <!-- <img src={post.featuredImage} /> -->
     <h3>{post.title}</h3>
     {post.excerpt && <p>{post.excerpt}</p>}
+    <h2>{post.link}</h2>
   </a>
 </li>
 
