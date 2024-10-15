@@ -1,19 +1,19 @@
 export const footerSocials = [
 	{
 		name: 'Instagram',
-		url: 'https://twitter.com/littlesticksdev',
+		url: 'https://www.instagram.com/bee_nvironment/',
 		icon: 'mdi:instagram',
 	},
 
 	{
 		name: 'Facebook',
-		url: 'https://github.com/littlesticks',
+		url: 'https://www.facebook.com/p/Barrington-Environmental-Establishment-100087050776342/',
 		icon: 'mdi:facebook',
 	},
 
 	{
 		name: 'Youtube',
-		url: 'https://youtube.com/c/LittleSticks',
+		url: 'https://www.youtube.com/watch?v=dBOVts1vXVw',
 		icon: 'mdi:youtube',
 	},
 ];
@@ -45,15 +45,15 @@ export const footerLists = [
 			},
 			{
 				title: 'Barrington Farm School',
-				slug: '/theme/style-guide',
+				slug: 'https://barringtonfarmschool.org/home/',
 			},
 			{
 				title: 'Save the Bay',
-				slug: '/theme/theme-setup',
+				slug: 'https://savebay.org/',
 			},
 			{
 				title: "Barrington Public Library",
-				slug: '/theme/customizing-odyssey',
+				slug: 'https://barringtonlibrary.org/home',
 			},
 		],
 	},
