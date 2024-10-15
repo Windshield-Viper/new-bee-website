@@ -2,7 +2,7 @@
 import { TextSection } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 import HeroSection from '../../components/sections/heros/HeroSection.astro';
-import { Container, TwoColumnTextSection} from '@components/odyssey-theme';
+import { Container, TwoColumnTextSection, OneColumnTextSection} from '@components/odyssey-theme';
 
 
 const seo = {
@@ -27,7 +27,6 @@ const seo = {
         id="home-hero-image"
         style=" width:500px !important"
       />
-      <figcaption style="text-align: center; font-size: 17px;">Caption</figcaption>
     </figure>
 
 
@@ -36,30 +35,161 @@ const seo = {
 	</HeroSection>
 
     <Container>
+    <h2>Upcoming Event(s)</h2>
+    
+    <OneColumnTextSection>
+				
+    
+
+      <div slot="column-2-body">
+        <h3>Barrington Beach Cleanup</h3>
+          <h4><i> October 26th, 2024 </i></h4>
+          <p>Join us at Barrington Beach on Saturday October 26th, 2024 from 5:15pm to 6:30pm for a beach clean-up and pizza. 
+
+            As part of the International Coastal Cleanup, we'll be removing trash while collecting important data for The Ocean Conservancy’s annual report on marine plastics. Afterward, enjoy pizza by the shore! Bring your friends and family and help protect our beaches. We will provide supplies!
+            </p>
+				</div>
+      </OneColumnTextSection>
+
     <h2>Past Events</h2>
+    
+    <OneColumnTextSection>
+				
+    
+
+      <div slot="column-2-body">
+        <h3>President's Environmental Youth Award Ceremony</h3>
+          <h4><i> August 1st, 2024 </i></h4>
+            <p>The BEE recieved a President's Environmental Youth award for its work, which the BEE founders went to recieve at Washington, DC. Thanks to everyone for their continued support!!</p>
+				</div>
+      </OneColumnTextSection>
+
+
     <TwoColumnTextSection>
 				
-                <div slot="column-1-body">
-                    <h3>Volunteering at Barrington Farm School</h3>
-                    <h4><i>March 26th, 2023</i></h4>
-                    <p>
-                        We did composting, farm clean-up tasks, and planting at the Barrington Farm School, a local farm in Barrington.                   
-                    </p>
-                </div>
+      <div slot="column-1-body">
+        <h3> Poster Workshop</h3>
+          <h4> <i>July 11th, 2024</i></h4>
+            <p>
+              We hosted a poster workshop at Barrington Public Library, where students created posters on environmental topics - specifically anti-littering.
+            </p>
+      </div>
 
-                <div slot="column-2-body">
-					<h3>Sea Level Rise - Science and Solutions for Rhode Island </h3>
-                    <h4><i>February 17th, 2023</i></h4>
-					<p>
-						Dr. Kim Cobb, professor and director of the Institutefor Environment and Society at Brown University, spoke on sea level rise in Rhode Island.
-					</p>
+      <div slot="column-2-body">
+        <h3>Sapling Sale, 2024 Edition</h3>
+          <h4><i> April 26th, 2024         </i></h4>
+            <p>We had our 2024 sapling sale in collaboration with nonprofit Tree-Plenish, selling 176 saplings to our neighbors to offset local paper use.</p>
+				</div>
+      </TwoColumnTextSection>
+
+    <TwoColumnTextSection>
+				
+      <div slot="column-1-body">
+        <h3> East Bay Bike Path Cleanup</h3>
+          <h4> <i>March 31, 2024</i></h4>
+            <p>
+              We hosted a cleanup of the East Bay Bike Path, picking up trash and debris, providing trash bags and pickers. Thanks to all who came out to help!
+            </p>
+      </div>
+
+      <div slot="column-2-body">
+        <h3>One Year Anniversary Celebration!</h3>
+          <h4><i>December 16th, 2023          </i></h4>
+            <p>We celebrated our one year anniversary with snacks and drinks. Thanks to all BEE members for their continued support!!</p>
+				</div>
+      </TwoColumnTextSection>
+
+    <TwoColumnTextSection>
+				
+      <div slot="column-1-body">
+        <h3> Dr. Manu DiLorenzo on El Nino</h3>
+          <h4> <i>November 27, 2023</i></h4>
+            <p>
+              Dr. Manu DiLorenzo, professor of environmental science at Brown University, spoke on the topic of El Nino, its impacts on the environment, and advances in climate modeling.      
+            </p>
+      </div>
+
+      <div slot="column-2-body">
+        <h3>Fall Volunteering Day @ BFS</h3>
+          <h4><i>Nov 5th, 2023          </i></h4>
+            <p> BEE members went to volunteer at the Barrington Farm School, helping out with various farm projects. We also had snacks!</p>
+				</div>
+      </TwoColumnTextSection>
+
+
+    <TwoColumnTextSection>
+				
+      <div slot="column-1-body">
+        <h3> Pumpkin Decoration Workshop</h3>
+          <h4> <i>October 10, 2023</i></h4>
+            <p>
+              Hosted a pumpkin decoration workshop at the Barrington Public Library, where students decorated pumpkins with environmentally friendly materials. Candy was provided!         
+            </p>
+      </div>
+
+      <div slot="column-2-body">
+        <h3>Tote Bag Workshop</h3>
+          <h4><i>August 29th, 2023          </i></h4>
+            <p> Hosted an art workshop at the Barrington Public Library supporting the use of resusable tote bags.</p>
+				</div>
+      </TwoColumnTextSection>
+    
+    <TwoColumnTextSection>
+				
+      <div slot="column-1-body">
+        <h3> Movie Screening</h3>
+          <h4> <i>July 31st, 2023</i></h4>
+            <p>
+              Hosted a screening of the environment-focused movie "Happy Feet" at the Barrington Public Library.              
+            </p>
+      </div>
+
+      <div slot="column-2-body">
+        <h3>Barrington Beach Cleanup</h3>
+          <h4><i>June 26th, 2023          </i></h4>
+            <p> We hosted a local beach cleanup at Barrington Beach, picking up trash and other debris. Thanks to Save the Bay for supplies!</p>
 				</div>
 
-				
+			</TwoColumnTextSection>
 
-			
+
+    <TwoColumnTextSection>
 				
+      <div slot="column-1-body">
+        <h3>Environmental Art Workshop</h3>
+          <h4> <i>June 6th, 2023</i></h4>
+            <p>
+              An art workshop was held at the Barrington Public Library, where students created art pieces inspired by nature and climate change.               
+            </p>
+      </div>
+
+      <div slot="column-2-body">
+        <h3>BHS Presentation on Student Volunteer Opportunities </h3>
+          <h4><i>April 26th, 2023          </i></h4>
+            <p> In conjunction with the Barrington Land Conservation Trust, we launched a new volunteer opportunity for students - the Student Stewarship Team.</p>
+				</div>
 
 			</TwoColumnTextSection>
-        </Container>
+
+      <TwoColumnTextSection>
+          
+        <div slot="column-1-body">
+          <h3>Volunteering at Barrington Farm School</h3>
+            <h4> <i>March 26th, 2023</i></h4>
+              <p>
+                We did composting, farm clean-up tasks, and planting at the Barrington Farm School, a local farm in Barrington.                   
+              </p>
+        </div>
+
+        <div slot="column-2-body">
+          <h3>Dr. Kim Cobb on Sea Level Rise </h3>
+            <h4><i>February 17th, 2023</i></h4>
+              <p>
+                Dr. Kim Cobb, professor and director of the Institute for Environment and Society at Brown University, spoke on sea level rise in Rhode Island.
+              </p>
+          </div>
+
+        </TwoColumnTextSection>
+        
+    </Container>
 </Layout>
