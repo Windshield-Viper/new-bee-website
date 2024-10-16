@@ -3,10 +3,20 @@ import { Container, FeatureCard, QuoteSection, ThreeColumnTextSection, Button, Y
 
 
 const imagePaths = [
-  '/assets/images/home/bee3.webp',
-  '/assets/images/home/bee3.webp',
-  '/assets/images/home/bee3.webp',
-  '/assets/images/home/bee3.webp'
+  '/assets/images/home/collages.webp',
+  '/assets/images/home/farmschool.webp',
+  '/assets/images/home/poster.webp',
+  '/assets/images/home/peya.webp',
+
+
+];
+
+const imagePaths2 = [
+
+  '/assets/images/home/sapling.webp',
+  '/assets/images/home/bikecleanup.webp',
+  '/assets/images/home/funnyface.webp',
+  '/assets/images/home/miatestimony.webp',
 ];
 
 
@@ -73,17 +83,32 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	<Container >
 	<h2>Media</h2>
 		<section>
-		 <h3>Photos</h3>
+		 <h3>Selected Photos</h3>
 
-			<div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: nowrap; overflow-x: auto; padding: 0.5rem 0rem 2rem;">
+			<div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: nowrap; overflow-x: auto; padding: 0rem 0rem 2rem;flex-shrink: 0;white-space: nowrap;">
   {imagePaths.map((path) => (
     <img
       src={path}
       alt="Description"
-      style="max-width: 300px; height: auto; object-fit: cover; border-radius: 10px;"
+      style="max-width: 325px; height: auto; object-fit: cover; border-radius: 10px;flex-shrink: 0;white-space: nowrap;"
     />
   ))}
+
     </div>
+
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: nowrap; overflow-x: auto; padding: 0.5rem 0rem 2rem;flex-shrink: 0;white-space: nowrap;">
+	{imagePaths2.map((path) => (
+	  <img
+		src={path}
+		alt="Description"
+		style="max-width: 300px; height: auto; object-fit: cover; border-radius: 10px;flex-shrink: 0;white-space: nowrap;"
+	  />
+	))}
+  
+	  </div>
+
+
 		</section>
 		<section>
 	<h3 style="margin-bottom:0px !important;">BEE in the News </h3>
