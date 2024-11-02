@@ -28,7 +28,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Newsletter',
-				slug: '/blog',
+				slug: '/newsletter',
 			},
 			{
 				title: 'Contact',
