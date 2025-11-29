@@ -55,6 +55,11 @@ export const footerLists = [
 				title: "Barrington Public Library",
 				slug: 'https://barringtonlibrary.org/home',
 			},
+
+			{
+				title: "Go Greenish",
+				slug: 'https://gogreenish.org/',
+			},
 		],
 	},
 
